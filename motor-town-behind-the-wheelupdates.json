@@ -1,13 +1,14 @@
 [
     {
-        "UpdateStageName": "Steam",
+        "UpdateStageName": "",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "2223650",
-        "UpdateSourceArgs": "1369670",
-        "UpdateSourceVersion": "beta",
+        "UpdateSourceArgs": "2223650",
+        "UpdateSourceVersion": "{{Stream}}",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
+        "ForceDownloadPlatform": "Windows",
         "DeleteAfterExtract": true,
         "OneShot": false
     }
