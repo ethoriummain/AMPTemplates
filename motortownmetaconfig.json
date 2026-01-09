@@ -2,6 +2,7 @@
     {
         "ConfigFile": "DedicatedServerConfig.json",
         "ConfigType": "json",
-        "AutoMap": true
+        "AutoMap": true,
+        "Importable": true
     }
 ]
