@@ -1,9 +1,9 @@
 [
     {
         "Protocol": "UDP",
-        "Port": "5520",
-        "Name": "Main Game Port",
-        "Description": "Port used for main game traffic",
-        "Ref": "MainGamePort"
+        "Port": 5520,
+        "Ref": "ServerPort",
+        "Name": "Server Port",
+        "Description": "Port for game traffic"
     }
 ]
