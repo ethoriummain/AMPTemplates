@@ -10,7 +10,7 @@
         "ParamFieldName": "ServerBuild",
         "DefaultValue": "latest_download",
         "EnumValues": {,
-            "latest_download": "Latest",
+            "latest_download": "Latest"
         }
     },
     {
