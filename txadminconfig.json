@@ -4,17 +4,13 @@
         "Category": "Updates",
         "Subcategory": "Server Updates:build:-1",
         "Description": "Sets the server build to install. If \"Specific version\" is selected, the download URL for the relevant build must be set under Specific Build Version Download URL. Update the server after changing this setting",
-        "Keywords": "server,build,artifact,recommended,latest,optional,critical,specific",
+        "Keywords": "server,build,artifact,latest",
         "FieldName": "ServerBuild",
         "InputType": "enum",
         "ParamFieldName": "ServerBuild",
-        "DefaultValue": "recommended_download",
-        "EnumValues": {
-            "recommended_download": "Recommended (default)",
-            "optional_download": "Optional",
+        "DefaultValue": "latest_download",
+        "EnumValues": {,
             "latest_download": "Latest",
-            "critical_download": "Critical",
-            "SpecificVersion": "Specific version"
         }
     },
     {
