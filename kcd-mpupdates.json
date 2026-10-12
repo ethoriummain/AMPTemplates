@@ -1,21 +1,19 @@
 [
     {
         "UpdateStageName": "Server Download",
-        "UpdateSourcePlatform": "Windows",
+        "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://github.com/dintech-rappy/kcd-mp-releases/releases/download/v0.43.0/KcdMp-server-0.43.0.zip",
-        "UpdateSourceTarget": "{{$FullBaseDir}}server",
-        "UnzipUpdateSource": true,
+        "UpdateSourceArgs": "server.zip",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Server Download",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/dintech-rappy/kcd-mp-releases/releases/download/v0.43.0/KcdMp-server-0.43.0.zip",
-        "UpdateSourceTarget": "{{$FullBaseDir}}server",
-        "UnzipUpdateSource": true,
+        "UpdateStageName": "Server Extract",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceData": "server.zip",
+        "UpdateSourceTarget": "serverfiles",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
     }
