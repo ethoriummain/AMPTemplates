@@ -14,7 +14,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "ExtractArchive",
         "UpdateSourceData": "server.zip",
-        "UpdateSourceTarget": "serverfiles/serverfiles",
+        "UpdateSourceTarget": "serverfiles",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
     }
