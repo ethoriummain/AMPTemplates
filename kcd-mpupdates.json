@@ -8,8 +8,6 @@
         "UpdateSourceTarget": "{{$FullBaseDir}}server",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
-        "UpdateSourceConditionSetting": "ServerBuild",
-        "UpdateSourceConditionValue": "latest_download",
         "DeleteAfterExtract": true
     },
     {
@@ -21,8 +19,6 @@
         "UpdateSourceTarget": "{{$FullBaseDir}}server",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
-        "UpdateSourceConditionSetting": "ServerBuild",
-        "UpdateSourceConditionValue": "latest_download",
         "DeleteAfterExtract": true
     }
 ]
