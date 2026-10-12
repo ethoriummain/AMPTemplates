@@ -6,15 +6,7 @@
         "UpdateSourceData": "https://github.com/dintech-rappy/kcd-mp-releases/releases/download/v0.43.0/KcdMp-server-0.43.0.zip",
         "UpdateSourceArgs": "server.zip",
         "UpdateSourceTarget": "serverfiles",
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Server Extract",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceData": "server.zip",
-        "UpdateSourceTarget": "serverfiles",
+        "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
     }
