@@ -3,7 +3,7 @@
         "UpdateStageName": "Server Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/dintech-rappy/kcd-mp-releases/releases/download/v0.44.0/KcdMp-server-0.44.0.zip",
+        "UpdateSourceData": "https://github.com/dintech-rappy/kcd-mp-releases/releases/download/v0.45.0/KcdMp-server-0.45.0.zip",
         "UpdateSourceArgs": "server.zip",
         "UpdateSourceTarget": "serverfiles",
         "UnzipUpdateSource": true,
