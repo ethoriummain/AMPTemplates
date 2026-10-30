@@ -1,9 +1,9 @@
 Meta.DisplayName=txAdmin enhanced
-Meta.Description=txAdmin Server Manager for FiveM and RedM
+Meta.Description=txAdmin enhanced Server Manager for FiveM and RedM
 Meta.OS=Windows, Linux
 Meta.AarchSupport=Unknown
 Meta.Arch=x86_64
-Meta.Author=ethorium - Made with AMP Config Generator
+Meta.Author=kielerboy - Made with AMP Config Generator
 Meta.URL=https://txadmin.gg/
 Meta.DisplayImageSource=url:https://github.com/tabarra/txAdmin/blob/master/docs/banner.png?raw=true
 Meta.EndpointURIFormat=
@@ -24,7 +24,7 @@ Meta.NoCommercialUsage=True
 Meta.ConfigVersion=4
 Meta.ReleaseNotes=
 Meta.BreakingReleaseNotes=
-Meta.AppConfigId=7f7c01fc-8c2b-4d64-l47d-85f3a416cc72
+Meta.AppConfigId=7f7c01fc-8c2b-4d74-b57d-85f8a416cc72
 Meta.ImportableExtensions=[]
 Meta.AppIsMultiIPAware=True
 App.DisplayName=txAdmin enhanced
