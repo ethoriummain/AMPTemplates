@@ -51,6 +51,6 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd ./txadmin/server && tar -xf fx.tar.xz >/dev/null && rm -f fx.tar.xz\""
+        "UpdateSourceArgs": "-c \"cd ./txadmin-enhanced/server && tar -xf fx.tar.xz >/dev/null && rm -f fx.tar.xz\""
     }
 ]
