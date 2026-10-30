@@ -1,0 +1,55 @@
+[
+    {
+        "UpdateStageName": "Create Server Directory",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}server"
+    },
+    {
+        "UpdateStageName": "Create Data Directory",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}server-data"
+    },
+    {
+        "UpdateStageName": "Delete Binary Directory Contents",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"rm -rf \\\"{{$FullBaseDir}}server/alpine/\\\"* >/dev/null 2>&1\"",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Delete Binary Directory Contents",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C del /Q /F \"{{$FullBaseDir}}server\\alpine\\\"* > NUL 2>&1",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Server Download",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://downloads.cfx-services.net/prod/01a169c3-7963-7973-9cbd-591d94fcd773/cfx-server_win_x64.zip",
+        "UpdateSourceTarget": "{{$FullBaseDir}}server",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Server Download",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://downloads.cfx-services.net/prod/01a169c3-8f7c-7a53-8bf2-2f094c05e77a/cfx-server_linux_x64.tar.xz",
+        "UpdateSourceTarget": "{{$FullBaseDir}}server",
+        "OverwriteExistingFiles": true
+    },
+    {
+        "UpdateStageName": "Server Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd ./txadmin/server && tar -xf cfx-server_linux_x64.tar.xz >/dev/null && rm -f cfx-server_linux_x64.tar.xz\""
+    }
+]
